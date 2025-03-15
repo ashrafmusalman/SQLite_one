@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/addNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/poppins"
+        android:text="Update Your Note"
+        android:textColor="@color/orange"
+        android:textSize="26sp"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_check_24"
+
+        app:tint="@color/orange"
+
+        />
+
+
+    <EditText
+        android:id="@+id/UpdatetitleEdt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addNote"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Enter the tile"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textColorHint="@color/orange"
+        android:textColor="@color/orange"
+
+        android:textSize="20sp"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/UpdateetDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/UpdatetitleEdt"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="top"
+        android:hint="Enter your description"
+        android:padding="12dp"
+        android:textColorHint="@color/orange"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins"
+
+
+        />
+
+
+</RelativeLayout>
